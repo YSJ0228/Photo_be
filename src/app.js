@@ -21,7 +21,7 @@ app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://6-photo-2-fe.vercel.app'],
+    origin: ['http://localhost:3000', 'https://photo-frontend-lac.vercel.app'],
     credentials: true,
   }),
 );

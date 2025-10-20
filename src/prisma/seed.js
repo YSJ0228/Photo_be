@@ -17,7 +17,7 @@ async function seed() {
 
   // 1. 유저 시딩
   for (const user of users) {
-    const hashedPassword = await bcrypt.hash('1234', 10);
+    const hashedPassword = await bcrypt.hash('12345678', 10);
     await prisma.user.create({
       data: {
         email: user.email,
